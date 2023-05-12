@@ -1,0 +1,10 @@
+myapp/
+    templates/
+        base.html
+        home.html
+        visual-art.html
+        generative-art.html
+        music.html
+        music-production.html
+        apps.html
+        store.html

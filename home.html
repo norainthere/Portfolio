@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to my portfolio!</h1>
+{% if links %}
+    <ul>
+    {% for link in links %}
+        <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No links available.</p>
+{% endif %}
+{% endblock %}

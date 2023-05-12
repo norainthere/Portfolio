@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Nora Krause - Generative Art{% endblock %}
+
+{% block content %}
+  <h2>Generative Art Portfolio</h2>
+  <p>Here are some examples of Nora's generative art:</p>
+  <ul>
+    <li><img src="{% static 'images/generative1.jpg' %}" alt="Generative Art 1"></li>
+    <li><img src="{% static 'images/generative2.jpg' %}" alt="Generative Art 2"></li>
+    <li><img src="{% static 'images/generative3.jpg' %}" alt="Generative Art 3"></li>
+  </ul>
+{% endblock %}

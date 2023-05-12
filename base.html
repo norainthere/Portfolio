@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <header>
+    <h1>Nora Krause's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'visual_art' %}">Visual Art</a></li>
+        <li><a href="{% url 'generative_art' %}">Generative Art</a></li>
+        <li><a href="{% url 'music' %}">Music</a></li>
+        <li><a href="{% url 'music_production' %}">Music Production</a></li>
+        <li><a href="{% url 'apps' %}">Apps</a></li>
+        <li><a href="{% url 'store' %}">Store</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer>
+    <p>Copyright &copy; {{ year }} Nora Krause.
+  </footer>
+</body>
+</html>
